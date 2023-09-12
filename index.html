@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hi</title>
+</head>
+<body>
+<button id="openTabsButton">Click here</button>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+function openTabs() {
+  var i;
+  for (i = 0; i < 30; i++) {
+    window.open("https://www.youtube.com/", "tab" + i);
+  }
+}
+
+var button = document.getElementById("openTabsButton");
+button.onclick = openTabs;
+</script>
+</body>
+</html>
